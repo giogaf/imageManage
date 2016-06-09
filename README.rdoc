@@ -8,3 +8,10 @@ App image management basic
 	class Mimodelo < ActiveRecord::Base
   	  mount_uploaders :micampo, nombreamedidaUploader
 	end
+
+gem twitter-bootstrap-rails
+1. bundle install
+2. rails generate bootstrap:install static
+3. reset server
+4. rails g bootstrap:layout miLayout   #ejem: application
+5. rails g bootstrap:themed miModelo
