@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @image.nombre %>
+</p>
+
+<p>
+  <strong>Archivo:</strong><br>
+  <%= image_tag @image.archivo.url, size:"200x180" %>
+
+</p>
+
+<%= link_to 'Edit', edit_image_path(@image) %> |
+<%= link_to 'Back', images_path %>
